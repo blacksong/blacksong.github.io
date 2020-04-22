@@ -29,6 +29,15 @@ playlist: [
     },
 
     {
+    src: '/m4a/二珂 - 淋雨一直走.m4a',
+    name: ' 淋雨一直走',
+    artist: '二珂 ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
     src: '/m4a/二珂 - 少龙的回忆 (TV Version).m4a',
     name: ' 少龙的回忆 (TV Version)',
     artist: '二珂 ',
@@ -68,6 +77,15 @@ playlist: [
     src: '/m4a/CRITTY - 不谓侠（Cover 萧忆情Alex）.m4a',
     name: ' 不谓侠（Cover 萧忆情Alex）',
     artist: 'CRITTY ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
+    src: '/m4a/二珂 - 我的梦.m4a',
+    name: ' 我的梦',
+    artist: '二珂 ',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
@@ -182,33 +200,6 @@ playlist: [
     },
 
     {
-    src: '/m4a/二珂 - 我的梦.170715.m4a',
-    name: ' 我的梦.170715',
-    artist: '二珂 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
-    src: '/m4a/二珂 - 淋雨一直走.170705.m4a',
-    name: ' 淋雨一直走.170705',
-    artist: '二珂 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
-    src: '/m4a/二珂 - 为你我受冷风吹.170602.m4a',
-    name: ' 为你我受冷风吹.170602',
-    artist: '二珂 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
     src: '/m4a/二珂 - 朱砂泪.m4a',
     name: ' 朱砂泪',
     artist: '二珂 ',
@@ -221,6 +212,15 @@ playlist: [
     src: '/m4a/清弄 - 风花雪月.m4a',
     name: ' 风花雪月',
     artist: '清弄 ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
+    src: '/m4a/二珂 - 为你我受冷风吹.m4a',
+    name: ' 为你我受冷风吹',
+    artist: '二珂 ',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
