@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>HOME</title>
+    <style type="text/css"> 
+        *{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("wlop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 提示信息 */
+.info{
+    width: 220px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    user-select: none;
+}
+.v-enter,
+.v-leave-to{
+    opacity: 0;
+    top: -20px;
+}
+.v-enter-active,
+.v-leave-active{
+    transition: all 0.4s ease-in-out;
+}
+[cloak]{
+    display: none;
+}
+
+
+/* 中间搜索框 */
+.searchBox{
+    width: 60%;
+    min-width: 200px;
+    height: 30vh;
+    margin: 10vh auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    /* width: 100%; */
+    height: 60px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Monoton";
+    text-decoration: none;
+}
+.clock > p{
+    user-select: none;
+}
+
+.inputBox{
+    width: 60%;
+    min-width: 200px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 15px;
+    border-radius: 20px;
+}
+.inputBox > input{
+    background: none;
+    min-width: 160px;
+    border: none;
+    outline: none;
+    padding: 0 10px 0 0;
+    flex: 1;
+    height: 44px;
+    color: #242323;
+    font-size: 16px;
+}
+.inputBox > input::placeholder{
+    color: #242323;
+    font-size: 16px;
+}
+.inputBox > img{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.inputBox > img:hover{
+    cursor: pointer;
+}
+    </style> 
+</head>
+<body>
+    <div id="app">
+        <!-- 提示信息 -->
+        <!-- <transition>
+            <p v-if="isInfo" class="info" v-cloak>{{ infoText }}</p>
+        </transition> -->
+    
+        <!-- 搜索框 -->
+        <section class="searchBox">
+            <!-- <div class="clock">
+                <p id="year"></p>/
+                <p id="month"></p>/
+                <p id="day"></p>--
+                <p id="hour"></p>
+                <p id="minute"></p>
+                <p id="second"></p>
+            </div> -->
+            <!-- <div class="clock" > -->
+                <a class="clock" href="https://blacksong.github.io">Blacksong</a>
+            <!-- </div> -->
+            <div class="inputBox">
+                <input type="text" placeholder="" id="searchInput" v-model="queryString" v-on:keyup.enter="search">
+                <img src="./search.png" alt="" @click="search">
+            </div>
+        </section>
+    </div>
+</body>
+<!-- <script>
+    window.onload = function(){
+        // 时钟代码
+        let year_text = document.getElementById("year");
+        let month_text = document.getElementById("month");
+        let day_text = document.getElementById("day");
+        let hour_text = document.getElementById("hour");
+        let minute_text = document.getElementById("minute");
+        let second_text = document.getElementById("second");
+        let timer = setInterval(function(){
+            let date = new Date();
+            let year = date.getFullYear();
+            let month = date.getMonth();
+            let day = date.getDate();
+            let hour = date.getHours();
+            let minute = date.getMinutes();
+            let second = date.getSeconds();
+            year_text.innerHTML = year;
+            month_text.innerHTML = (month + 1);
+            day_text.innerHTML = day;
+            hour_text.innerHTML = hour + ":";
+            minute_text.innerHTML = minute + ":";
+            second_text.innerHTML = second;
+        }, 100);
+
+        // 设置input框自动获取焦点
+        let searchInput = document.getElementById("searchInput");
+        searchInput.focus();
+    };
+</script> -->
+<script src="/js/vue.min.js"></script>
+<script>
+    const vm = new Vue({
+        el:"#app",
+        data:{
+            queryString:"", // 查询字符串
+            isInfo:false, // 是否显示提示信息
+            infoText:"", // 要显示的提示信息
+        },
+        mounted() {
+            
+        },
+        methods: {
+            // 按下enter键或点击搜索图标进行搜索
+            search:function(){
+                if(this.queryString === ""){  
+                    this.infoText = "输入的内容不能为空！";                  
+                    this.isInfo = true;
+                    let that = this;
+                    // 1200毫秒之后关闭提示信息
+                    // setTimeout(function(){
+                    //     that.isInfo = false;
+                    // }, 1200);
+                }else{
+                    // this.queryString = "";
+                    // 在当前窗口打开
+                    window.location.href = "https://www.sogou.com/web?query=" + this.queryString;
+
+                    // 在新窗口打开
+                    // window.open("https://www.baidu.com/s?ie=UTF-8&wd=" + this.queryString);
+                }
+            }
+        },
+    });
+</script>
+</html>

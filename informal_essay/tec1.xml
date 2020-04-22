@@ -1,0 +1,17 @@
+
+<title>dlib Python库安装踩坑记录</title>
+<date>2019年2月12日</date>
+<content>
+<p># for Ubuntu</p>
+
+<p>sudo apt-get install build-essential cmake</p>
+
+<p>sudo apt-get install libgtk-3-dev</p>
+
+<p>sudo apt-get install libboost-all-dev</p>
+
+<p>python -m pip install dlib</p>
+
+<p>dlib人脸识别 模块 如何 在Python 中安装？ - 花花儿的回答 - 知乎 <br>
+<a href="https://www.zhihu.com/question/34524316/answer/182278536" rel="nofollow">https://www.zhihu.com/question/34524316/answer/182278536</a></p>
+</content>

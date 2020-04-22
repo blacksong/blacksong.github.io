@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/element_files/style.css" type="text/css" rel="stylesheet">
+    <link href="/element_files/style_002.css" type="text/css" rel="stylesheet">
+    <title>{title}</title>
+<link rel="dns-prefetch" href="https://cdn.staticfile.org/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="stylesheet" id="pure-highlightjs-style-css" href="/element_files/googlecode.css" type="text/css" media="all">
+<link rel="stylesheet" id="pure-highlightjs-css-css" href="/element_files/pure-highlight.css" type="text/css" media="all">
+<script type="text/javascript" src="/element_files/jquery.js"></script>
+<script type="text/javascript" src="/element_files/script.js"></script>
+<script type="text/javascript" src="/element_files/prettify.js"></script>
+<script type="text/javascript" src="/element_files/instantclick.js"></script>
+
+<link rel="https://api.w.org/" href="https://blacksong.github.io/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blacksong.github.io/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blacksong.github.io/wp-includes/wlwmanifest.xml"> 
+<meta property="og:type" name="og:type" content="website">
+<meta property="og:description" name="og:description" content="极致才是王道！">
+<meta property="og:locale" name="og:locale" content="zh_CN">
+<meta property="og:site_name" name="og:site_name" content="狂奔的松子">
+<meta property="twitter:card" name="twitter:card" content="summary">
+    
+    <script>
+        if(localStorage.adams_color_style) $('head').append("<style class='diy-color-style'>" + localStorage.adams_color_style + "</style>");
+        if(localStorage.adams_font_style) $('head').append("<style class='diy-font-style'>" + localStorage.adams_font_style + "</style>");
+    </script>
+
+<style>#instantclick{{position:fixed;top:0;left:0;width:100%;pointer-events:none;z-index:2147483647;transition:opacity .25s .1s}}.instantclick-bar{{background:#29d;width:100%;margin-left:-100%;height:2px;transition:all .25s}}</style></head>
+<body>
+    <style type="text/css">
+        .music_label{{ position: fixed;top: 0;z-index: 10000;float: right;}}
+    </style>
+    <div class="music_label" id="app"></div>
+    <script type="text/javascript" src="/m4a/cplayer.min.js"></script>
+    <script type="text/javascript" src="/m4a/playlist.js"></script>
+<!-- Header -->
+<header class="header">
+    <section class="container">
+        <hgroup itemscope="" itemtype="https://schema.org/WPHeader">
+            <h1 class="fullname">{title}</h1>
+        </hgroup>
+        <nav class="social"><ul id="menu-share" class="menu">
+</ul></nav><nav class="header_nav"><ul id="menu-menu" class="menu"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-11"><a href="/index.html">首页</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="/informal_essay/index.html">随笔</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="/player.html">音乐</a></li>
+</ul></nav>    </section>
+    
+    <section class="infos">
+        <div class="container">
+                    <h2 class="fixed-title"></h2>
+            <div class="fixed-menus"></div>
+            <div class="placard">  {date}发表   </div>
+                </div>
+    </section>
+</header>
+    <section class="container main-load">
+        <article class="post_article" itemscope="" itemtype="https://schema.org/Article">
+        {content}
+        </article>
+        <!-- Comments -->
+    </section>    <!-- Comments -->
+
+    <div id="container" class="container main-load"></div>
+<!--comment system by gitment /below-->
+    <link rel="stylesheet" href="https://blacksong.github.io/gitment/style/default.css">
+    <script src="https://blacksong.github.io/gitment/browser_cn_zh.js"></script>
+<script>
+var gitment = new Gitment({{
+  id: {comment_id},
+  owner: 'blacksong',
+  repo: 'blacksong.github.io',
+  oauth: {{
+    client_id: 'fa0d017544db23172359',
+    client_secret: '531bacc5dcf8ac70ad791d7fbfc90c5ec6b795e2',
+  }},
+}})
+gitment.render('container')
+</script>
+<!--comment system by gitment /before-->
+<footer class="footer">
+	<section class="container">
+        <ul id="menu-footer" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="https://blacksong.github.io/about">关于博主@狂奔的松子</a></li>
+</ul>
+	</section>
+</footer>
+
+
+<script type="text/javascript" src="/element_files/ajax-comment.js"></script>
+<script type="text/javascript" src="/element_files/highlight.js"></script>
+
+</body></html>
