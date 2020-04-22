@@ -90,11 +90,11 @@ playlist: ['''
     m4a_list = []
     for i in m4a_path.glob('*'):
         if i.suffix in m4a_suffix:
-            if i.suffix == '.mp3':
-                m4a_name = i.with_suffix('.m4a')
-                os.system('ffmpeg -i "{}" "{}" -y'.format(i,m4a_name))
-                os.remove(i)
-                i = m4a_name 
+            # if i.suffix == '.mp3':
+            #     m4a_name = i.with_suffix('.m4a')
+            #     os.system('ffmpeg -i "{}" "{}" -y'.format(i,m4a_name))
+            #     os.remove(i)
+            #     i = m4a_name 
             os.system('git add "./m4a/{}"'.format(i.name))
             stem = i.stem.split('-')
             if len(stem) == 2:

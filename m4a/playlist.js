@@ -2,6 +2,15 @@ let player = new cplayer({
 element: document.getElementById('app'),
 playlist: [
     {
+    src: '/m4a/二珂 - 我的梦.mp3',
+    name: ' 我的梦',
+    artist: '二珂 ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
     src: '/m4a/二珂 - 东京不太热.m4a',
     name: ' 东京不太热',
     artist: '二珂 ',
@@ -29,15 +38,6 @@ playlist: [
     },
 
     {
-    src: '/m4a/二珂 - 淋雨一直走.m4a',
-    name: ' 淋雨一直走',
-    artist: '二珂 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
     src: '/m4a/二珂 - 少龙的回忆 (TV Version).m4a',
     name: ' 少龙的回忆 (TV Version)',
     artist: '二珂 ',
@@ -50,15 +50,6 @@ playlist: [
     src: '/m4a/二珂 - 走在冷风中.m4a',
     name: ' 走在冷风中',
     artist: '二珂 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
-    src: '/m4a/板娘 - 普通disco.m4a',
-    name: ' 普通disco',
-    artist: '板娘 ',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
@@ -83,18 +74,18 @@ playlist: [
     },
 
     {
-    src: '/m4a/二珂 - 我的梦.m4a',
-    name: ' 我的梦',
-    artist: '二珂 ',
+    src: '/m4a/陈一发儿 - 童话镇.m4a',
+    name: ' 童话镇',
+    artist: '陈一发儿 ',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
     },
 
     {
-    src: '/m4a/陈一发儿 - 童话镇.m4a',
-    name: ' 童话镇',
-    artist: '陈一发儿 ',
+    src: '/m4a/二珂 - 为你我受冷风吹.mp3',
+    name: ' 为你我受冷风吹',
+    artist: '二珂 ',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
@@ -200,6 +191,15 @@ playlist: [
     },
 
     {
+    src: '/m4a/二珂 - 淋雨一直走.mp3',
+    name: ' 淋雨一直走',
+    artist: '二珂 ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
     src: '/m4a/二珂 - 朱砂泪.m4a',
     name: ' 朱砂泪',
     artist: '二珂 ',
@@ -212,15 +212,6 @@ playlist: [
     src: '/m4a/清弄 - 风花雪月.m4a',
     name: ' 风花雪月',
     artist: '清弄 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
-    src: '/m4a/二珂 - 为你我受冷风吹.m4a',
-    name: ' 为你我受冷风吹',
-    artist: '二珂 ',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
