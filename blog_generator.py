@@ -118,9 +118,10 @@ playlist: ['''
     fp.write(''.join(f))
     fp.write('\n]\n})')
     fp.close()
+    os.system('git add ./m4a/playlist.js')
 
 if __name__=='__main__':
     generate_main()
-    # webbrowser.open('http://127.0.0.1:8000/index.html')
-    # os.system('python -m http.server')
+    webbrowser.open('http://127.0.0.1:8000/index.html')
+    os.system('python -m http.server')
    
