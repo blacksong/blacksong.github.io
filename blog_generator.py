@@ -114,6 +114,7 @@ playlist: ['''
             m4a_list.append(ele)
     fp = open(m4a_path/'playlist.js','w')
     fp.write(js_header)
+    m4a_list.sort(key = lambda x:x['name'])
     f = ['\n    {\n'+ '\n'.join(["    {}: '{}',".format(k,v) for k,v in i.items()]) + '\n    },\n' for i in m4a_list]
     fp.write(''.join(f))
     fp.write('\n]\n})')
