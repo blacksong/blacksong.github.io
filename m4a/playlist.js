@@ -2,15 +2,6 @@ let player = new cplayer({
 element: document.getElementById('app'),
 playlist: [
     {
-    src: '/m4a/二珂 - 我的梦.mp3',
-    name: ' 我的梦',
-    artist: '二珂 ',
-    lyric: '',
-    sublyric: '',
-    poster: '/m4a/poster.jpg',
-    },
-
-    {
     src: '/m4a/二珂 - 东京不太热.m4a',
     name: ' 东京不太热',
     artist: '二珂 ',
@@ -194,6 +185,15 @@ playlist: [
     src: '/m4a/二珂 - 淋雨一直走.mp3',
     name: ' 淋雨一直走',
     artist: '二珂 ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
+    src: '/m4a/张靓颖-我的梦.m4a',
+    name: '我的梦',
+    artist: '张靓颖',
     lyric: '',
     sublyric: '',
     poster: '/m4a/poster.jpg',
