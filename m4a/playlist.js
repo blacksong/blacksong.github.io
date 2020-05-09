@@ -119,6 +119,15 @@ playlist: [
     },
 
     {
+    src: '/m4a/李伊曼 - 时间的过客.mp3',
+    name: ' 时间的过客',
+    artist: '李伊曼 ',
+    lyric: '',
+    sublyric: '',
+    poster: '/m4a/poster.jpg',
+    },
+
+    {
     src: '/m4a/刘瑞琦 - 晴天.m4a',
     name: ' 晴天',
     artist: '刘瑞琦 ',
